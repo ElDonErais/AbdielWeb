@@ -26,7 +26,7 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 6. Extraer el archivo zip llamada `credenciales.zip` en el cual adentro habran dos archivos, uno que tiene el firebaseconfig que se necesitara en la instruccion n°9 y el segundo archivo es el `.env` el cual es necesario para la conexion con la base de datos y debe moverse a la carpeta raiz del proyecto.
 7. Iniciar xampp con apache y mysql, crear en phpmyadmin una base de datos llamada `db_node` e importar los datos del archivo db_node.sql en la carpeta db ubicada en la carpeta raiz del proyecto.
 8. Importante mantener xampp activado para la autenticacion de usuarios.
-9. Reemplazar las lineas de codigo donde se necesiten las credenciales de Firebase las cuales son 6:
+9. Reemplazar las lineas de codigo donde se necesiten las credenciales de Firebase las cuales son 5:
    - firebaseconect.js
    - formulariobackend.js
    - loginadmingoogle.js
