@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@firebase/auth": "^1.7.4",
+    "bcrypt": "^5.1.1",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-admin": "^2.0.0",
+    "express-session": "^1.18.0",
+    "firebase": "^10.12.2",
+    "firebase-admin": "^12.1.1",
+    "mysql": "^2.18.1"
+  },
+  "scripts": {
+    "run": "npm run dev",
+    "start": "node src/app.js"
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <link rel="stylesheet" href="../public/css/styleformulario.css">
+    <script type="module" src="../private/js/firebaseconect.js"></script>
+    <script type="module" src="../private/js/formulariobackend.js"></script>
+</head>
+
+<body>
+    <a href="/deslogear"><button>Volver</button></a>
+    <h1>Administrador de la Pagina</h1>
+    <form id="formulario">
+        <label for="text">Nombre pagina principal:</label>
+        <input type="text" id="parametro1" name="text" required value="Rodrigo">
+
+        <label for="text">Apellido pagina principal:</label>
+        <input type="text" id="parametro2" name="text" required value="Madrid">
+
+        <label for="text">cambiar palabra juego color boton:</label>
+        <input type="text" id="parametro3" name="text" required value="Cambio de Color">
+
+        <center>
+            <button type="submit">Entrar</button>
+        </center>
+    </form>
+    <script type="module" src="../private/js/formulariobackend.js"></script>
+</body>
+
+</html>

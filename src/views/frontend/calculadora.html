@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../public/css/stylecalculadora.css">
+</head>
+<body>
+    <a href="javascript:history.back()"><button>Volver</button></a>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <button id="OP" onclick="clearResult()">C</button>
+        <button id="OP" onclick="appendNumber('+')">+</button>
+        <button id="OP" onclick="appendNumber('-')">-</button>
+        <button id="OP" onclick="appendNumber('*')">*</button>
+        <button id="OP" onclick="appendNumber('/')">/</button>
+        <p></p>
+        <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button id="cero" onclick="appendNumber(0)">0</button>
+        <button id="igual" onclick="calculate()">=</button>
+    </div>
+
+    <script src="../public/js/calculadora.js"></script>
+</body>
+</html>
