@@ -22,18 +22,23 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 2. Tener instalado `NodeJS` en tu ordenador.
 3. Navega al directorio del proyecto.
 4. Instalar express con el comando `npm install express` en la carpeta raiz del proyecto.
-5. Reemplazar las lineas de codigo donde se necesiten las credenciales de Firebase las cuales son 6:
+5. Instalar dotenv con el comando `npm install dotenv` en la carpeta raiz del proyecto.
+6. Extraer el archivo zip llamada `credenciales.zip` en el cual adentro habran dos archivos, uno que tiene el firebaseconfig que se necesitara en la instruccion n°9 y el segundo archivo es el `.env` el cual es necesario para la conexion con la base de datos y debe moverse a la carpeta raiz del proyecto.
+7. Iniciar xampp con apache y mysql, crear en phpmyadmin una base de datos llamada `db_node` e importar los datos del archivo db_node.sql en la carpeta db ubicada en la carpeta raiz del proyecto.
+8. Importante mantener xampp activado para la autenticacion de usuarios.
+9. Reemplazar las lineas de codigo donde se necesiten las credenciales de Firebase las cuales son 6:
    - firebaseconect.js
    - formulariobackend.js
-   - loginadmin.js
    - loginadmingoogle.js
    - firebaseconectfn.js
    - formulariofn.js
-7. Ejecuta node src/app.js en la terminal en la raiz del proyecto.
-8. Abre tu navegador y escribe en la barra de navegacion lo siguiente: `localhost:3000`
-9. Para acceder al logeo de administrador y asi acceder a la pagina de admnistracion escribe en la barra de navegacion: `localhost.3000/admin`
+10. Ejecuta `npm start` en la terminal en la raiz del proyecto.
+11. Abre tu navegador y escribe en la barra de navegacion lo siguiente: `localhost:3000`
+12. Para acceder al logeo de administrador y asi acceder a la pagina de admnistracion escribe en la barra de navegacion: `localhost.3000/admin`
 
-Nota: Las credenciales de la base de datos a reemplazar junto con el correo y contraseña necesarios para poder acceder a la pagina de administrador y tambien hacer funcionar `Firebase` en la pagina estaran en un archivo zip el cual su contraseña solo estara disponible al docente que evalue este proyecto.
+Nota1: En la pagina de admnistracion habran tres campos que vienen llenados por defecto, el primer campo cambiara el texto que esta despues de "Bienvenido" en el index (`localhost:3000`) representa el nombre, el segundo campo modifica el texto al lado derecho de el primer texto y que representa su apellido y el ultimo campo modifica el texto de un boton en la pagina `localhost:3000/juego_color.html`.
+
+Nota2: Las credenciales de la base de datos a reemplazar junto con el correo y contraseña necesarios para poder acceder a la pagina de administrador y tambien hacer funcionar `Firebaseconfig` en la pagina estaran en un archivo zip el cual su contraseña solo estara disponible al docente que evalue este proyecto.
 
 ## Contribuir
 
