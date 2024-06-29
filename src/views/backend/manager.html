@@ -17,21 +17,62 @@
 <body>
     <a href="/deslogear"><button>Cerrar Sesion e ir a Home</button></a>
     <h1>Administrador de la Pagina</h1>
-    <form id="formulario">
-        <label for="text">Nombre pagina principal:</label>
-        <input type="text" id="parametro1" name="text" required value="Rodrigo">
 
-        <label for="text">Apellido pagina principal:</label>
-        <input type="text" id="parametro2" name="text" required value="Madrid">
+    <center>
+        <div class="tab">
+            <button class="tablinks" onclick="openPage(event, 'Page1')">Modificar Texto</button>
+            <button class="tablinks" onclick="openPage(event, 'Page2')">Ingresar Usuarios</button>
+            <button class="tablinks" onclick="openPage(event, 'Page3')">Ver usuarios</button>
+            <p></p>
+        </div>
+    </center>
 
-        <label for="text">cambiar palabra juego color boton:</label>
-        <input type="text" id="parametro3" name="text" required value="Cambio de Color">
 
-        <center>
-            <button type="submit">Entrar</button>
-        </center>
-    </form>
+    <div id="Page1" class="tabcontent">
+        <form id="formulario">
+            <label for="text">Nombre pagina principal:</label>
+            <input type="text" id="parametro1" name="text" required value="Rodrigo">
+
+            <label for="text">Apellido pagina principal:</label>
+            <input type="text" id="parametro2" name="text" required value="Madrid">
+
+            <label for="text">cambiar palabra juego color boton:</label>
+            <input type="text" id="parametro3" name="text" required value="Cambio de Color">
+
+            <center>
+                <button type="submit">Entrar</button>
+            </center>
+        </form>
+    </div>
+
+    <div id="Page2" class="tabcontent">
+        <form id="formulariousers">
+            <div><label for="">Nombres</label></div>
+            <div><input type="text" id="nombres" name="nombres" required></div>
+            <div><label for="">Dirección</label></div>
+            <div><input type="text" id="direccion" name="direccion" required></div>
+            <div><label for="">Correo</label></div>
+            <div><input type="email" id="correo" name="correo" required></div>
+            <div><label for="">Teléfono</label></div>
+            <div><input type="text" id="telefono" name="telefono" required></div>
+            <div><label for="">Estado</label></div>
+            <div>
+                <select name="estado" id="estado" required>
+                    <option value="1" selected>Habilitado</option>
+                    <option value="0">Deshabilitado</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" name="ingresar" id="ingresar" value="Ingresar">
+            </div>
+        </form>
+    </div>
+
+    <div id="Page3" class="tabcontent">
+        <div id="usersTable"></div>
+    </div>
     <script type="module" src="../private/js/formulariobackend.js"></script>
+    <script src="../private/js/constructor.js"></script>
 </body>
 
 </html>
